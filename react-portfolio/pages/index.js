@@ -37,6 +37,11 @@ export default function Home() {
             <Image src={deved} layout="fill" objectFit="cover"/>
           </div>
         </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I offer</h3>
+          </div>
+        </section>
       </main> 
     </div>
   )
