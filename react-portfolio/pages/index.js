@@ -3,6 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
 import Image from 'next/image';
 import deved from '../public/dev-ed-wave.png';
+import design from '../public/design.png';
+import code from '../public/code.png';
+import consulting from '../public/consulting.png';
 
 export default function Home() {
   return (
@@ -40,6 +43,50 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1">Services I offer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">I provide SEO optimization, maintenance and creation of modern, fast and mobile friendly websites.
+            <br/>
+            I worked for 5 years as <span className="text-teal-500 bold">SEO specialist</span> for real estate agency, providing organic traffic and improving Google search positions of the website on the extremely competetive market, as well as speeding up website's speed and usability using latest solutions
+            <br/>
+            Also, for 2 years I have worked as programming teacher for kids, teaching them how to create awesome games using programming languages like <span className="text-teal-500 bold">JavaScript</span> or <span className="text-teal-500 bold">Python</span>. 
+            </p>
+          </div>
+          <div> 
+            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} style={{margin:"auto"}} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful designs</h3>
+              <p className="py-2">
+                Creating beautiful designs suited for your needs following core design theory
+              </p>
+              <h4 className="py-4 text-teal-400">Design Tools I use for FrontEnd</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Zepplin</p>
+              <p className="text-gray-800 py-1">Pixel Perfect</p>
+            </div>
+            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100} style={{margin:"auto"}} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Quality code</h3>
+              <p className="py-2">
+                Using the latest technology to best suit the needs
+              </p>
+              <h4 className="py-4 text-teal-400">Language and frameworks I use for FrontEnd</h4>
+              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">Next.js</p>
+              <p className="text-gray-800 py-1">Tailwind</p>
+            </div>
+            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={consulting} width={100} height={100} style={{margin:"auto"}} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Search Engine Optimization</h3>
+              <p className="py-2">
+              Properly build, tag and optimize the websites
+              </p>
+              <h4 className="py-4 text-teal-400">Search Engines love when the websites are</h4>
+              <p className="text-gray-800 py-1">Lightweighted</p>
+              <p className="text-gray-800 py-1">Fast</p>
+              <p className="text-gray-800 py-1">Modern</p>
+              <p className="text-gray-800 py-1">Adaptative</p>
+            </div>
           </div>
         </section>
       </main> 
