@@ -30,6 +30,7 @@ export default function Home() {
             <h1 className="text-xl font-light font-roboto dark:text-gray-100">nicoVolo</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-gray-100"/></li>
+              <li className="text-xl pl-5 underline text-teal-600"><a href="/blog">Blog</a></li>
               <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500  text-white px-4 py-2 rounded-md ml-8 font-roboto font-light" href="#">Resume</a></li>
             </ul>
           </nav>
@@ -54,9 +55,9 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-100">I provide SEO optimization, maintenance and creation of modern, fast and mobile friendly websites.
+          <div className="md:text-xl max-w-xl mx-auto">
+            <h3 className="text-3xl py-2 dark:text-gray-200">Services I offer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-100">I provide SEO optimization, maintenance and creation of modern, fast and mobile friendly websites.
             <br/>
             I worked for 5 years as <span className="text-teal-500 bold dark:text-teal-200">SEO specialist</span> for real estate agency, providing organic traffic and improving Google search positions of the website on the extremely competetive market, as well as speeding up website's speed and usability using latest solutions
             <br/>
@@ -64,37 +65,37 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10"> 
-            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10 dark:shadow-sm dark:shadow-teal-200">
               <Image src={design} width={100} height={100} style={{margin:"auto"}} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful designs</h3>
-              <p className="py-2">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">Beautiful designs</h3>
+              <p className="py-2 dark:text-gray-200">
                 Creating beautiful designs suited for your needs following core design theory
               </p>
-              <h4 className="py-4 text-teal-400">Design Tools I use for FrontEnd</h4>
+              <h4 className="py-4 text-teal-400 dark:text-teal-200">Design Tools I use for FrontEnd</h4>
               <p className="text-gray-800 py-1 dark:text-gray-200">Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Figma</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Zepplin</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Pixel Perfect</p>
             </div>
-            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10 dark:shadow-sm dark:shadow-teal-200">
               <Image src={code} width={100} height={100} style={{margin:"auto"}} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Quality code</h3>
-              <p className="py-2">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">Quality code</h3>
+              <p className="py-2 dark:text-gray-200">
                 Using the latest technology to best suit the needs
               </p>
-              <h4 className="py-4 text-teal-400">Language and frameworks I use for FrontEnd</h4>
+              <h4 className="py-4 text-teal-400 dark:text-teal-200">Language and frameworks I use for FrontEnd</h4>
               <p className="text-gray-800 py-1 dark:text-gray-200">Javascript</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">React</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Next.js</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Tailwind</p>
             </div>
-            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center items-center shadow-lg p-10 rounded-xl my-10 dark:shadow-sm dark:shadow-teal-200">
               <Image src={consulting} width={100} height={100} style={{margin:"auto"}} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Search Engine Optimization</h3>
-              <p className="py-2">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">Search Engine Optimization</h3>
+              <p className="py-2 dark:text-gray-200">
               Properly build, structure and tag the website components
               </p>
-              <h4 className="py-4 text-teal-400">Search Engines love when the websites are</h4>
+              <h4 className="py-4 text-teal-400 dark:text-teal-200">Search Engines love when the websites are</h4>
               <p className="text-gray-800 py-1 dark:text-gray-200">Lightweighted</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Fast</p>
               <p className="text-gray-800 py-1 dark:text-gray-200">Modern</p>
@@ -103,8 +104,8 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
+          <div className="md:text-xl max-w-xl mx-auto">
+            <h3 className="text-3xl py-1 dark:text-gray-200">Portfolio</h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">I provide SEO optimization, maintenance and creation of modern, fast and mobile friendly websites.
             <br/>
             I worked for 5 years as <span className="text-teal-500 bold dark:text-teal-200">SEO specialist</span> for real estate agency, providing organic traffic and improving Google search positions of the website on the extremely competetive market, as well as speeding up website's speed and usability using latest solutions
