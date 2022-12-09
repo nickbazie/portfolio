@@ -1,9 +1,44 @@
 import {useState} from 'react';
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {GraphQLClient, gql} from "graphql-request";
+import BlogCard from '../components/BlogCard';
 
+const graphcms = new GraphQLClient('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbebsflb08dx01te7wjr4kb8/master');
 
-export default function Blog() {
+const QUERY = gql`
+    {
+        posts{
+            id,
+            title,
+            datePublished,
+            slug,
+            content {
+                html
+            }
+            author{
+                name,
+                avatar {
+                    url
+                }
+            }
+            coverPhoto {
+                url
+            }
+        }        
+    }
+`;
+
+export async function getStaticProps(){
+    const {posts} = await graphcms.request(QUERY);
+    return {
+        props: {
+            posts,
+        },
+        revalidate: 100,
+    };
+}
+export default function Blog({posts}) {
     const [darkMode, setDarkMode ] = useState(false); 
     return (
       <div className={darkMode ? "dark" : "" }>
@@ -23,7 +58,18 @@ export default function Blog() {
                 <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500  text-white px-4 py-2 rounded-md ml-8 font-roboto font-light" href="#">Resume</a></li>
               </ul>
             </nav>
+            {posts.map((post) => (
+                <BlogCard 
+                title={post.title} 
+                author={post.author} 
+                coverPhoto={post.coverPhoto} 
+                key={post.id} 
+                datePublished={post.datePublished} 
+                slug={post.slug}
+                />
+            ))}
           </section>
+
         </main> 
       </div>
     )
