@@ -11,7 +11,7 @@ import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
-import fairy-forest from '../public/fairy-forest.png';
+import fairyforest from '../public/fairyforest.png';
 import {useState} from 'react';
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
           </nav>
           <div className="text-center p -10">
             <h2 className="text-5xl py-2 text-teal-600 font-light md:text-6xl dark:text-teal-200">
-              Nico Volosh
+              Nico Voloshchuk
             </h2>
             <h3 className="text-2xl py-2 text-gray-600 md:text-3xl dark:text-gray-200">
               Frontend Developer
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
-              <a href="https://parallax-rey9.vercel.app/"><Image src={fairy-forest} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></a>
+              <a href="https://parallax-rey9.vercel.app/"><Image src={fairyforest} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
